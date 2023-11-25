@@ -1,0 +1,100 @@
+layout: {qmk_keyboard: chocofi}
+layers:
+  base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: ⎇}
+    - {t: S, h: ⌃}
+    - {t: D, h: ⌘}
+    - {t: F, h: ⇧}
+    - G
+    - H
+    - {t: J, h: ⇧}
+    - {t: K, h: ⌘}
+    - {t: L, h: ⌃}
+    - {t: ;, h: ⎇, s: ':'}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - ''
+    - {t: BACKSPACE, h: extend}
+    - ⇧
+    - ⏎
+    - {t: ⎵, h: numbers}
+    - ''
+  extend:
+  - [⎋, LS(TAB), ↹, '&swap', ⌘`, '', '', '', '', '']
+  - [⎇, ⌃, ⌘, ⇧, LS(LG(RIGHT BRACKET)), ←, ↓, ↑, →, '']
+  - [⌘Z, ⌘X, ⌘C, ⌘V, LS(LG(LEFT BRACKET)), HOME, PAGE DOWN, PAGE UP, END, '']
+  - - ''
+    - {type: held}
+    - {t: ▽, type: trans}
+    - ENTER
+    - {t: ⎵, h: system}
+    - ''
+  numbers:
+  - - ⎋
+    - '~'
+    - '['
+    - (
+    - '{'
+    - '}'
+    - )
+    - ']'
+    - {t: '`', s: '~'}
+    - {t: ▽, type: trans}
+  - - {t: '1', h: ⎇}
+    - {t: '2', h: ⌃}
+    - {t: '3', h: ⌘}
+    - {t: '4', h: ⇧}
+    - '5'
+    - '6'
+    - {t: '7', h: ⇧}
+    - {t: '8', h: ⌘}
+    - {t: '8', h: ⌃}
+    - {t: '0', h: ⎇}
+  - - '|'
+    - +
+    - _
+    - '"'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: '''', s: '"'}
+    - '-'
+    - {t: '=', s: +}
+    - \
+  - - ''
+    - {t: BACKSPACE, h: system}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - ''
+  system:
+  - - 󰂯0
+    - 󰂯1
+    - 󰂯2
+    - 󰂯3
+    - {t: BT, h: '4'}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', '', '', '', '', PREVIOUS, 'VOL
+
+      DOWN', 'VOL
+
+      UP', ⏭, '']
+  - [󰂯󱟃, '', '', '', '', '', PLAY PAUSE, 󰝟, '', '']
+  - - ''
+    - {type: held}
+    - ''
+    - ''
+    - {type: held}
+    - ''
