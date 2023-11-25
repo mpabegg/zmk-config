@@ -2,7 +2,8 @@
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/) configuration.
 
-I forked it from [urob](https://github.com/urob/zmk-config) and made some changes to suit my needs.
-I'm using my own fork of the ZMK firmware, in which I have meged the Chocofi definition.
+Using my own [fork](https://github.com/mpabegg/zmk) of ZMK with the following PRs merged:
+ - [#1366](https://github.com/zmkfirmware/zmk/pull/1366) feat(behaviors): Swapper implementation
+ - [#1783](https://github.com/zmkfirmware/zmk/pull/1783) feat(boards): Add Chocofi
 
 ![](keymap_img/chocofi_keymap.svg)
