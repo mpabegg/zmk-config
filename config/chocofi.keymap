@@ -93,7 +93,7 @@
         &kp Q        &kp D         &kp R        &kp W         &kp B     &kp J   &kp F         &kp U        &kp P         &kp SEMI
         &hml LALT A  &hml LCTRL S  &hml LGUI H  &hml LSHFT T  &kp G     &kp Y   &hmr RSHFT N  &hmr RGUI E  &hmr RCTRL O  &hmr RALT I
         &kp Z        &kp X         &kp M        &kp C         &kp V     &kp K   &kp L         &kp COMMA    &kp DOT       &kp FSLH
-                                   &trans       &trans        &trans    &trans  &trans        &trans
+                                   &none        &lt 3 BACKSPACE  &kp LSHFT    &kp RET  &lt 4 SPACE   &none
       >;
 
       label = "Workman";
