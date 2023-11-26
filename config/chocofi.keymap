@@ -91,7 +91,7 @@
     workman {
       bindings = <
         &kp Q  &kp D  &kp R   &kp W   &kp B     &kp J   &kp F   &kp U      &kp P    &kp SEMI
-        &kp A  &kp S  &kp H   &kp T   &kp G     &kp Y   &kp N   &kp E      &kp O    &kp I
+        &hml LALT A  &hml LTCRL S  &hml LGUI H   &hml LSHFT T   &kp G     &kp Y   &hmr RSHFT N   &hmr RGUI E      &hmr RCTRL O    &hmr RALT I
         &kp Z  &kp X  &kp M   &kp C   &kp V     &kp K   &kp L   &kp COMMA  &kp DOT  &kp FSLH
                       &trans  &trans  &trans    &trans  &trans  &trans
       >;
