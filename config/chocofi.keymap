@@ -68,13 +68,15 @@
   keymap {
     compatible = "zmk,keymap";
 
-    base {
+    qwerty {
       bindings = <
         &kp Q        &kp W         &kp E        &kp R            &kp T        &kp Y    &kp U         &kp I        &kp O         &kp P
         &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT F     &kp G        &kp H    &hmr RSHFT J  &hmr RGUI K  &hmr RCTRL L  &hmr RALT SEMI
         &kp Z        &kp X         &kp C        &kp V            &kp B        &kp N    &kp M         &kp COMMA    &kp DOT       &kp FSLH
-                                   &none        &lt 2 BACKSPACE  &kp LSHFT    &kp RET  &lt 3 SPACE   &none
+                                   &none        &lt 3 BACKSPACE  &kp LSHFT    &kp RET  &lt 4 SPACE   &none
       >;
+
+      label = "QWERTY";
     };
 
     colemak-dh {
@@ -82,8 +84,19 @@
         &kp Q        &kp W         &kp F        &kp P            &kp B        &kp J    &kp L         &kp U        &kp Y         &kp SEMI
         &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E  &hmr RCTRL I  &hmr RALT O
         &kp Z        &kp X         &kp C        &kp D            &kp V        &kp K    &kp H         &kp COMMA    &kp DOT       &kp FSLH
-                                   &none        &lt 2 BACKSPACE  &kp LSHFT    &kp RET  &lt 3 SPACE   &none
+                                   &none        &lt 3 BACKSPACE  &kp LSHFT    &kp RET  &lt 4 SPACE   &none
       >;
+    };
+
+    workman {
+      bindings = <
+        &kp Q  &kp D  &kp R   &kp W   &kp B     &kp J   &kp F   &kp U      &kp P    &kp SEMI
+        &kp A  &kp S  &kp H   &kp T   &kp G     &kp Y   &kp N   &kp E      &kp O    &kp I
+        &kp Z  &kp X  &kp M   &kp C   &kp V     &kp K   &kp L   &kp COMMA  &kp DOT  &kp FSLH
+                      &trans  &trans  &trans    &trans  &trans  &trans
+      >;
+
+      label = "Workman";
     };
 
     extend {
@@ -91,7 +104,7 @@
         &kp ESCAPE  &kp LS(TAB)  &kp TAB    &swap      &kp LG(GRAVE)                &kp TAB    &kp GRAVE      &none        &none      &none
         &kp LALT    &kp LCTRL    &kp LGUI   &kp LSHFT  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
         &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LS(LG(LEFT_BRACKET))     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-                                 &none      &trans     &trans                       &kp ENTER  &lt 4 SPACE    &none
+                                 &none      &trans     &trans                       &kp ENTER  &lt 5 SPACE    &none
       >;
     };
 
@@ -100,15 +113,15 @@
         &kp ESC       &kp TILDE      &kp LEFT_BRACKET  &kp LPAR         &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RPAR       &kp RIGHT_BRACKET  &kp GRAVE      &trans
         &hml LALT N1  &hml LCTRL N2  &hml LGUI N3      &hml LSHFT N4    &kp N5            &kp N6           &hmr RSHFT N7  &hmr RGUI N8       &hmr RCTRL N9  &hmr RALT N0
         &kp PIPE      &kp PLUS       &kp UNDERSCORE    &kp DQT          &trans            &trans           &kp SQT        &kp MINUS          &kp EQUAL      &kp BACKSLASH
-                                     &none             &lt 4 BACKSPACE  &trans            &trans           &trans         &none
+                                     &none             &lt 5 BACKSPACE  &trans            &trans           &trans         &none
       >;
     };
 
     system {
       bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none           &none              &none            &none       &none
-        &none         &none         &none         &none         &none           &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &none
-        &none         &none         &none         &none         &bt BT_CLR      &tog 1          &kp C_PLAY_PAUSE   &kp K_MUTE       &none       &none
+        &tog 1        &tog 2        &none         &none         &none           &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &none
+        &none         &none         &none         &none         &bt BT_CLR      &none           &kp C_PLAY_PAUSE   &kp K_MUTE       &none       &none
                                     &none         &trans        &none           &none           &trans             &none
       >;
     };
