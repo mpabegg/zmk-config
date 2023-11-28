@@ -109,10 +109,10 @@
 
     Canary {
       bindings = <
-        &kp W  &kp L  &kp Y   &kp P   &kp B     &kp Z   &kp F   &kp O      &kp U    &kp SEMI
-        &hml LALT C  &hml LCTRL R  &hml LGUI S   &hml LSHFT T   &kp G     &kp M   &hmr RSHFT N   &hrm RGUI E      &hmr RCTRL I    &hmr RALT A
-        &kp Q  &kp J  &kp V   &kp D   &kp K     &kp X   &kp H   &kp COMMA  &kp DOT  &kp FSLH
-                     &none        &lt 4 BACKSPACE  &kp LSHFT    &kp RET  &lt 5 SPACE   &none
+        &kp W        &kp L         &kp Y        &kp P            &kp B        &kp Z    &kp F         &kp O         &kp U         &kp SEMI
+        &hml LALT C  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RCTRL I  &hmr RCTRL I  &hmr RALT A
+        &kp Q        &kp J         &kp V        &kp D            &kp K        &kp X    &kp H         &kp COMMA     &kp DOT       &kp FSLH
+                                   &none        &lt 4 BACKSPACE  &kp LSHFT    &kp RET  &lt 5 SPACE   &none
       >;
 
       label = "Canary";
