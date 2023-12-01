@@ -85,49 +85,59 @@
       label = "QWERTY";
     };
 
-    layer_5 {
+    tarmak1a {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q        &kp W         &kp J        &kp R            &kp T        &kp Y    &kp U         &kp I        &kp O         &kp P
+        &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT F     &kp G        &kp H    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT SEMI
+        &kp Z        &kp X         &kp C        &kp V            &kp B        &kp K    &kp M         &kp COMMA    &kp DOT       &kp FSLH
+                                   &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
+
+      label = "Tarmak #1A";
     };
 
-    layer_6 {
+    tarmak1b {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q        &kp W         &kp J        &kp R            &kp T        &kp Y    &kp U         &kp I        &kp O         &kp P
+        &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT F     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT SEMI
+        &kp Z        &kp X         &kp C        &kp V            &kp B        &kp K    &kp H         &kp COMMA    &kp DOT       &kp FSLH
+                                   &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
+
+      label = "Tarmak #1B";
     };
 
-    layer_7 {
+    tarmak2 {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q        &kp W         &kp F        &kp R            &kp B        &kp Y    &kp U         &kp I        &kp O         &kp P
+        &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT SEMI
+        &kp Z        &kp X         &kp C        &kp V            &kp J        &kp K    &kp H         &kp COMMA    &kp DOT       &kp FSLH
+                                   &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
+
+      label = "Tarmak #2";
     };
 
-    layer_8 {
+    tarmak3 {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q        &kp W         &kp F        &kp J            &kp B        &kp Y    &kp U         &kp I        &kp O         &kp P
+        &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT SEMI
+        &kp Z        &kp X         &kp C        &kp D            &kp V        &kp K    &kp H         &kp COMMA    &kp DOT       &kp FSLH
+                                   &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
+
+      label = "Tarmak #3";
     };
 
-    layer_9 {
+    tarmak3 {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q        &kp W         &kp F        &kp P            &kp B        &kp J    &kp U         &kp I        &kp Y         &kp SEMI
+        &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT O
+        &kp Z        &kp X         &kp C        &kp D            &kp V        &kp K    &kp H         &kp COMMA    &kp DOT       &kp FSLH
+                                   &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
+
+      label = "Tarmak #3";
     };
 
     colemak-dh {
