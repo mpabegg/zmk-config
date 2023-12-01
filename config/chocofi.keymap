@@ -118,7 +118,7 @@
       label = "Tarmak #2";
     };
 
-    tarmak4 {
+    tarmak3 {
       bindings = <
         &kp Q        &kp W         &kp F        &kp J            &kp B        &kp Y    &kp U         &kp I        &kp O         &kp P
         &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT SEMI
@@ -126,10 +126,10 @@
                                    &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
 
-      label = "Tarmak #4";
+      label = "Tarmak #3";
     };
 
-    tarmak3 {
+    tarmak4 {
       bindings = <
         &kp Q        &kp W         &kp F        &kp P            &kp B        &kp J    &kp U         &kp I        &kp Y         &kp SEMI
         &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp M    &hmr RSHFT N  &hmr RGUI E &hmr RCTRL L  &hmr RALT O
@@ -137,7 +137,7 @@
                                    &none        &lt 8 BACKSPACE  &kp LSHFT    &kp RET  &lt 8 SPACE   &none
       >;
 
-      label = "Tarmak #3";
+      label = "Tarmak #4";
     };
 
     colemak-dh {
