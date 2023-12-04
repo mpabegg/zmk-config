@@ -160,7 +160,7 @@ layers:
     - ''
   System:
   - ['', '', '', '', '', '', '', '', '', '']
-  - ['', '', '', '', 󰂯󱟃, ⏮, , , ⏭, '']
+  - [Colemak-DH, Canaria, '', '', 󰂯󱟃, ⏮, , , ⏭, '']
   - [󰂯0, 󰂯1, 󰂯2, 󰂯3, 󰂯4, '', ⏯, 󰝟, '', '']
   - - ''
     - {type: held}
@@ -168,6 +168,43 @@ layers:
     - ''
     - {type: held}
     - ''
+  '6':
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ⎋
