@@ -105,10 +105,10 @@
 
     extend {
       bindings = <
-        &kp ESCAPE  &kp LS(TAB)  &kp TAB    &swap      &kp LG(GRAVE)                &kp TAB    &kp GRAVE      &none        &none      &none
-        &kp LALT    &kp LCTRL    &kp LGUI   &kp LSHFT  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
-        &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LS(LG(LEFT_BRACKET))     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-                                 &none      &trans     &trans                       &kp ENTER  &lt 5 SPACE    &none
+        &kp ESCAPE  &kp LS(TAB)  &kp TAB    &swap      &kp LG(GRAVE)                &kp TAB   &kp GRAVE      &none        &none      &none
+        &kp LALT    &kp LCTRL    &kp LGUI   &kp LSHFT  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none
+        &kp LG(Z)   &kp LG(X)    &kp LG(C)  &kp LG(V)  &kp LS(LG(LEFT_BRACKET))     &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                 &none      &trans     &trans                       &kp RET   &lt 5 SPACE    &none
       >;
     };
 

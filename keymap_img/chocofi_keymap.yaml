@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: chocofi}
 layers:
-  base:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: ⎇}
     - {t: S, h: ⌃}
@@ -23,22 +23,105 @@ layers:
     - {t: ., s: '>'}
     - {t: /, s: '?'}
   - - ''
-    - {t: BACKSPACE, h: extend}
+    - {t: 󰭜, h: extend}
     - ⇧
     - ⏎
-    - {t: ⎵, h: numbers}
+    - {t: ⎵, h: Num/Sym}
+    - ''
+  Colemak-DH:
+  - - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: ;, s: ':'}
+  - - {t: A, h: ⎇}
+    - {t: R, h: ⌃}
+    - {t: S, h: ⌘}
+    - {t: T, h: ⇧}
+    - G
+    - M
+    - {t: N, h: ⇧}
+    - {t: E, h: ⌘}
+    - {t: I, h: ⌃}
+    - {t: O, h: ⎇}
+  - - Z
+    - X
+    - C
+    - D
+    - V
+    - K
+    - H
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - ''
+    - {t: 󰭜, h: extend}
+    - ⇧
+    - ⏎
+    - {t: ⎵, h: Num/Sym}
+    - ''
+  Canaria:
+  - - W
+    - L
+    - Y
+    - P
+    - B
+    - F
+    - J
+    - O
+    - U
+    - {t: ;, s: ':'}
+  - - {t: C, h: ⎇}
+    - {t: R, h: ⌃}
+    - {t: S, h: ⌘}
+    - {t: T, h: ⇧}
+    - G
+    - M
+    - {t: N, h: ⇧}
+    - {t: E, h: ⌘}
+    - {t: I, h: ⌃}
+    - {t: A, h: ⎇}
+  - - Q
+    - Z
+    - V
+    - D
+    - K
+    - X
+    - H
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - ''
+    - {t: 󰭜, h: extend}
+    - ⇧
+    - ⏎
+    - {t: ⎵, h: Num/Sym}
     - ''
   extend:
-  - [⎋, LS(TAB), ↹, '&swap', ⌘`, '', '', '', '', '']
-  - [⎇, ⌃, ⌘, ⇧, LS(LG(RIGHT BRACKET)), ←, ↓, ↑, →, '']
-  - [⌘Z, ⌘X, ⌘C, ⌘V, LS(LG(LEFT BRACKET)), HOME, PAGE DOWN, PAGE UP, END, '']
+  - - ⎋
+    - ⇧↹
+    - ↹
+    - ⌘↹
+    - ⌘`
+    - ↹
+    - {t: '`', s: '~'}
+    - ''
+    - ''
+    - ''
+  - [⎇, ⌃, ⌘, ⇧, '⌘⇧[', ←, ↓, ↑, →, '']
+  - [⌘Z, ⌘X, ⌘C, ⌘V, '⌘⇧]', ⇱, 󰶡, 󰶣, ⇲, '']
   - - ''
     - {type: held}
     - {t: ▽, type: trans}
-    - ENTER
-    - {t: ⎵, h: system}
+    - ⏎
+    - {t: ⎵, h: System}
     - ''
-  numbers:
+  Num/Sym:
   - - ⎋
     - '~'
     - '['
@@ -70,31 +153,21 @@ layers:
     - {t: '=', s: +}
     - \
   - - ''
-    - {t: BACKSPACE, h: system}
+    - {t: 󰭜, h: System}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - ''
-  system:
-  - - 󰂯0
-    - 󰂯1
-    - 󰂯2
-    - 󰂯3
-    - {t: BT, h: '4'}
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-  - ['', '', '', '', '', PREVIOUS, 'VOL
-
-      DOWN', 'VOL
-
-      UP', ⏭, '']
-  - [󰂯󱟃, '', '', '', '', '', PLAY PAUSE, 󰝟, '', '']
+  System:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', 󰂯󱟃, ⏮, , , ⏭, '']
+  - [󰂯0, 󰂯1, 󰂯2, 󰂯3, 󰂯4, '', ⏯, 󰝟, '', '']
   - - ''
     - {type: held}
     - ''
     - ''
     - {type: held}
     - ''
+combos:
+- p: [0, 1]
+  k: ⎋
