@@ -90,7 +90,7 @@
         &kp Q        &kp W         &kp F        &kp P         &kp B     &kp J   &kp L         &kp U        &kp Y         &kp SEMI
         &hml LALT A  &hml LCTRL R  &hml LGUI S  &hml LSHFT T  &kp G     &kp M   &hmr RSHFT N  &hmr RGUI E  &hmr RCTRL I  &hmr RALT O
         &kp Z        &kp X         &kp C        &kp D         &kp V     &kp K   &kp H         &kp COMMA    &kp DOT       &kp FSLH
-                                   &trans       &trans        &trans    &trans  &trans        &trans
+                                   &none        &lt 3 BACKSPACE  &kp LSHFT    &kp RET  &lt 4 SPACE   &none
       >;
     };
 
@@ -99,7 +99,7 @@
         &kp W        &kp L         &kp Y        &kp P         &kp B     &kp F   &kp J         &kp O        &kp U         &kp SEMI
         &hml LALT C  &hml LCTRL R  &hml LGUI S  &hml LSHFT T  &kp G     &kp M   &hmr RSHFT N  &hmr RGUI E  &hmr RCTRL I  &hmr RALT A
         &kp Q        &kp Z         &kp V        &kp D         &kp K     &kp X   &kp H         &kp COMMA    &kp DOT       &kp FSLH
-                                   &trans       &trans        &trans    &trans  &trans        &trans
+                                   &none        &lt 3 BACKSPACE  &kp LSHFT    &kp RET  &lt 4 SPACE   &none
       >;
     };
 
