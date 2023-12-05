@@ -97,7 +97,7 @@
     Nerps {
       bindings = <
         &kp X  &kp L  &kp D   &kp P   &kp G     &kp Z   &kp K   &kp O     &kp U      &kp SEMI
-        &kp N  &kp R  &kp T   &kp S   &kp W     &kp Y   &kp H   &kp E     &kp I      &kp A
+        &hml LALT N  &hml LCTRL R  &hml LGUI T  &hml LSHFT S     &kp W        &kp Y    &hmr RSHFT H  &hmr RGUI E  &hmr RCTRL I  &hmr RALT A
         &kp Q  &kp J  &kp M   &kp C   &kp V     &kp B   &kp F   &kp APOS  &kp COMMA  &kp DOT
                       &trans  &trans  &trans    &trans  &trans  &trans
       >;
@@ -106,7 +106,7 @@
     Matmak {
       bindings = <
         &kp B  &kp L  &kp D   &kp C   &kp Q     &kp K   &kp P   &kp A     &kp J      &kp SEMI
-        &kp N  &kp R  &kp T   &kp S   &kp G     &kp H   &kp U   &kp O     &kp E      &kp I
+        &hml LALT N  &hml LCTRL R  &hml LGUI T  &hml LSHFT S     &kp G        &kp H    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
         &kp Z  &kp X  &kp M   &kp W   &kp Y     &kp V   &kp F   &kp APOS  &kp COMMA  &kp DOT
                       &trans  &trans  &trans    &trans  &trans  &trans
       >;
