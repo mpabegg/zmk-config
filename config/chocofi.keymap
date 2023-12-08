@@ -98,7 +98,7 @@
       bindings = <
         &kp X        &kp L         &kp D        &kp P            &kp G        &kp Z    &kp K         &kp O        &kp U         &kp SEMI
         &hml LALT N  &hml LCTRL R  &hml LGUI T  &hml LSHFT S     &kp W        &kp Y    &hmr RSHFT H  &hmr RGUI E  &hmr RCTRL I  &hmr RALT A
-        &kp Q        &kp J         &kp M        &kp C            &kp V        &kp B    &kp F         &kp APOS     &kp COMMA     &kp DOT
+        &kp Q        &kp J         &kp M        &kp C            &kp V        &kp B    &kp F         &kp COMMA    &kp DOT       &kp FSLH
                                    &none        &lt 4 BACKSPACE  &kp LSHFT    &kp RET  &lt 5 SPACE   &none
       >;
     };
@@ -107,7 +107,7 @@
       bindings = <
         &kp B        &kp L         &kp D        &kp C            &kp Q        &kp K    &kp P         &kp A        &kp J         &kp SEMI
         &hml LALT N  &hml LCTRL R  &hml LGUI T  &hml LSHFT S     &kp G        &kp H    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
-        &kp Z        &kp X         &kp M        &kp W            &kp Y        &kp V    &kp F         &kp APOS     &kp COMMA     &kp DOT
+        &kp Z        &kp X         &kp M        &kp W            &kp Y        &kp V    &kp F         &kp COMMA     &kp DOT      &kp FSLH
                                    &none        &lt 4 BACKSPACE  &kp LSHFT    &kp RET  &lt 5 SPACE   &none
       >;
     };

@@ -225,8 +225,8 @@ parse_config:
     BSPC: '󰌍'
     BACKSPACE: '󰭜'
     AMPS: '&'
-    APOS: .
-    APOSTROPHE: <
+    APOS: ''''
+    APOSTROPHE: ''''
     ASTERISK: '*'
     ASTRK: '*'
     AT: '@'
