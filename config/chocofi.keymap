@@ -83,11 +83,11 @@
       >;
     };
 
-    Matmak {
+    Romak {
       bindings = <
-        &kp B        &kp L         &kp D        &kp C            &kp Q        &kp K    &kp P         &kp A        &kp J         &kp SEMI
-        &hml LALT N  &hml LCTRL R  &hml LGUI T  &hml LSHFT S     &kp G        &kp H    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
-        &kp Z        &kp X         &kp M        &kp W            &kp Y        &kp V    &kp F         &kp COMMA    &kp DOT       &kp FSLH
+        &kp FSLH     &kp B         &kp M        &kp G            &kp K        &kp X    &kp L         &kp O        &kp U         &kp SEMI
+        &hml LALT D  &hml LCTRL N  &hml LGUI S  &hml LSHFT T     &kp W        &kp Z    &hmr RSHFT R  &hmr RGUI A  &hmr RCTRL E  &hmr RALT I
+        &kp Q        &kp F         &kp C        &kp P            &kp V        &kp J    &kp H         &kp COMMA    &kp DOT       &kp Y
                                    &none        &lt 2 BACKSPACE  &kp LSHFT    &kp RET  &lt 3 SPACE   &none
       >;
     };
