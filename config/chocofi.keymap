@@ -83,10 +83,10 @@
       >;
     };
 
-    Matmak {
+    Stronk {
       bindings = <
         &kp F        &kp D         &kp L        &kp B            &kp V        &kp J    &kp G         &kp O        &kp U         &kp SEMI
-        &hml LALT N  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp K        &kp Y    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
+        &hml LALT S  &hml LCTRL T  &hml LGUI R  &hml LSHFT N     &kp K        &kp Y    &hmr RSHFT M  &hmr RGUI A  &hmr RCTRL E  &hmr RALT I
         &kp Z        &kp Q         &kp X        &kp H            &kp P        &kp W    &kp C         &kp COMMA    &kp DOT       &kp FSLH
                                    &none        &lt 2 BACKSPACE  &kp LSHFT    &kp RET  &lt 3 SPACE   &none
       >;
