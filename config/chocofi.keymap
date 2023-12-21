@@ -85,9 +85,9 @@
 
     Matmak {
       bindings = <
-        &kp B        &kp L         &kp D        &kp W            &kp Q        &kp K    &kp P         &kp A        &kp J         &kp SEMI
-        &hml LALT N  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp G        &kp H    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
-        &kp Z        &kp X         &kp M        &kp C            &kp Y        &kp V    &kp F         &kp COMMA    &kp DOT       &kp FSLH
+        &kp F        &kp D         &kp L        &kp B            &kp V        &kp J    &kp G         &kp O        &kp U         &kp SEMI
+        &hml LALT N  &hml LCTRL R  &hml LGUI S  &hml LSHFT T     &kp K        &kp Y    &hmr RSHFT U  &hmr RGUI O  &hmr RCTRL E  &hmr RALT I
+        &kp Z        &kp Q         &kp X        &kp H            &kp P        &kp W    &kp C         &kp COMMA    &kp DOT       &kp FSLH
                                    &none        &lt 2 BACKSPACE  &kp LSHFT    &kp RET  &lt 3 SPACE   &none
       >;
     };
