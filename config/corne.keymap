@@ -72,7 +72,8 @@
   keymap {
     chosen {
       zmk,matrix_transform = &five_column_transform;
-    }
+    };
+
     compatible = "zmk,keymap";
 
     QWERTY {
