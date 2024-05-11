@@ -106,7 +106,7 @@
       >;
     };
 
-    GW2 {
+    MMO {
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &tog 4
         &kp LCTRL  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
