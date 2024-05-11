@@ -108,37 +108,37 @@
 
     GW2-Move_Weapon {
       bindings = <
-        &kp ESC    &kp N1  &kp W  &kp N2       &kp N3     &trans  &trans   &trans  &trans  &tog 4
-        &lt 7 TAB  &kp Q   &kp S  &kp E        &kp F      &trans  &trans   &trans  &trans  &trans
-        &kp LSHFT  &none   &none  &kp N4       &kp N5     &trans  &trans   &trans  &trans  &trans
-                           &none  &lt 5 SPACE  &lt 6 V    &trans  &kp ESC  &trans
+        &kp ESC    &kp N1  &kp W  &kp N2       &kp N3     &none  &none    &none  &none  &tog 4
+        &lt 7 TAB  &kp Q   &kp S  &kp E        &kp F      &none  &none    &none  &none  &none
+        &kp LSHFT  &none   &none  &kp N4       &kp N5     &none  &none    &none  &none  &none
+                           &none  &lt 5 SPACE  &lt 6 V    &none  &kp ESC  &none
       >;
     };
 
     GW2-Utility {
       bindings = <
-        &kp ESC  &kp N6  &trans  &kp N7  &kp N8    &trans  &trans  &trans  &trans  &trans
-        &trans   &trans  &trans  &trans  &kp N     &trans  &trans  &trans  &trans  &trans
-        &trans   &trans  &trans  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+        &kp ESC  &kp N6  &none  &kp N7  &kp N8    &none  &none  &none  &none  &none
+        &none    &none   &none  &none   &kp N     &none  &none  &none  &none  &none
+        &none    &none   &none  &kp N9  &kp N0    &none  &none  &none  &none  &none
+                         &none  &none   &none     &none  &none  &none
       >;
     };
 
     GW2-Profession {
       bindings = <
-        &trans  &kp F1  &trans  &kp F2  &kp F3    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &kp N     &trans  &trans  &trans  &trans  &trans
-        &trans  &kp F6  &kp F7  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &none  &kp F1  &none   &kp F2  &kp F3    &none  &none  &none  &none  &none
+        &none  &none   &none   &none   &kp N     &none  &none  &none  &none  &none
+        &none  &kp F6  &kp F7  &kp F4  &kp F5    &none  &none  &none  &none  &none
+                       &none   &none   &none     &none  &none  &none
       >;
     };
 
     layer_7 {
       bindings = <
-        &trans  &kp I   &kp H   &kp K   &kp O     &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &kp I   &kp M   &kp H     &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &none  &kp I  &kp H  &kp K  &kp O    &none  &none  &none  &none  &none
+        &none  &none  &kp I  &kp M  &kp H    &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+                      &none  &none  &none    &none  &none  &none
       >;
     };
   };
