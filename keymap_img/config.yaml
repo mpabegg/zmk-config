@@ -310,6 +310,7 @@ parse_config:
     DOWN: ↓
     TAB: ↹
     RETURN: '⏎'
+    RET: '⏎'
     ESCAPE: '⎋'
     C_REWIND: '⏮'
     C_PREV: '⏮'

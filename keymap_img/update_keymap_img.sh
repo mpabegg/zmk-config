@@ -7,10 +7,15 @@ if [ -z $kb ]; then
   exit 1
 fi
 
-echo 'Parsing ZMK keymap...'
-keymap -c config.yaml parse -c 10 -z "../config/${kb}.keymap" > "${kb}_keymap.yaml"
+if [ -f "${kb}_keymap.yaml" ]; then
+  rm "${kb}_keymap.yaml"
+fi
 
-echo '\n\nDrawing keymap...'
-keymap -c config.yaml draw -k "$kb" "${kb}_keymap.yaml" > "${kb}_keymap.svg"
+if [ -f "${kb}_keymap.svg" ]; then
+  rm "${kb}_keymap.svg"
+fi
+
+keymap -c my_config.yaml parse -c 10 -z "../config/${kb}.keymap" > "${kb}_keymap.yaml"
+keymap -c my_config.yaml draw -k "$kb" "${kb}_keymap.yaml" > "${kb}_keymap.svg"
 
 open "${kb}_keymap.svg"
