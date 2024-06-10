@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: mpabegg
+      url-base: https://github.com/mpabegg
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: mpabegg
+      revision: chocofi
       import: app/west.yml
   self:
     path: config
