@@ -20,9 +20,7 @@
   tapping-term-ms = <200>;
 };
 
-
 / {
-
   chosen { zmk,matrix_transform = &five_column_transform; };
 
   combos {
@@ -100,46 +98,10 @@
 
     System {
       bindings = <
-        &tog 4        &none         &none         &none         &none           &none           &none              &none            &none       &none
+        &none         &none         &none         &none         &none           &none           &none              &none            &none       &none
         &none         &none         &none         &none         &bt BT_CLR      &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &none
         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none           &kp C_PLAY_PAUSE   &kp K_MUTE       &none       &none
                                     &none         &trans        &none           &none           &trans             &none
-      >;
-    };
-
-    GW2-Move_Weapon {
-      bindings = <
-        &kp ESC    &kp N1  &kp W  &kp N2       &kp N3     &none  &none    &none  &none  &tog 4
-        &lt 7 TAB  &kp Q   &kp S  &kp E        &kp F      &none  &none    &none  &none  &none
-        &kp LSHFT  &none   &none  &kp N4       &kp N5     &none  &none    &none  &none  &none
-                           &none  &lt 5 SPACE  &lt 6 V    &none  &kp ESC  &none
-      >;
-    };
-
-    GW2-Utility {
-      bindings = <
-        &kp ESC  &kp N6  &none  &kp N7  &kp N8    &none  &none  &none  &none  &none
-        &none    &none   &none  &none   &kp N     &none  &none  &none  &none  &none
-        &none    &none   &none  &kp N9  &kp N0    &none  &none  &none  &none  &none
-                         &none  &none   &none     &none  &none  &none
-      >;
-    };
-
-    GW2-Profession {
-      bindings = <
-        &none  &kp F1  &none   &kp F2  &kp F3    &none  &none  &none  &none  &none
-        &none  &none   &none   &none   &kp N     &none  &none  &none  &none  &none
-        &none  &kp F6  &kp F7  &kp F4  &kp F5    &none  &none  &none  &none  &none
-                       &none   &none   &none     &none  &none  &none
-      >;
-    };
-
-    layer_7 {
-      bindings = <
-        &none  &kp I  &kp H  &kp K  &kp O    &none  &none  &none  &none  &none
-        &none  &none  &kp I  &kp M  &kp H    &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-                      &none  &none  &none    &none  &none  &none
       >;
     };
   };
