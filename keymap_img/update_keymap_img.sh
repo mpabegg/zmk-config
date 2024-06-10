@@ -10,9 +10,6 @@ fi
 echo 'Parsing ZMK keymap...'
 keymap -c config.yaml parse -c 10 -z "../config/${kb}.keymap" > "${kb}_keymap.yaml"
 
-echo '\n\nAdjusting keymap yaml...'
-# rm -rf chocofi_keymap.yamlupdated && ./keymap_img_adjuster.py chocofi_keymap.yaml
-
 echo '\n\nDrawing keymap...'
 keymap -c config.yaml draw -k "$kb" "${kb}_keymap.yaml" > "${kb}_keymap.svg"
 
