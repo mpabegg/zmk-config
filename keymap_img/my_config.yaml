@@ -20,7 +20,7 @@ draw_config:
   small_pad: 2.0
   legend_rel_x: 0.0
   legend_rel_y: 0.0
-  draw_key_sides: true
+  draw_key_sides: false
   key_side_pars:
     rel_x: 0
     rel_y: 4
