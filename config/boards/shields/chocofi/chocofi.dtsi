@@ -5,11 +5,16 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "chocofi-layout.dtsi"
+
+&chocofi_layout {
+  transform = <&default_transform>;
+};
 
 / {
-	chosen {
+  chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+    zmk,physical-layout = &chocofi_layout;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -38,6 +43,5 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 			, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
-		
 	};
 };
