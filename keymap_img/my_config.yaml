@@ -54,6 +54,7 @@ parse_config:
     '&bt BT_SEL 4': '󰂯4'
     '&bt BT_CLR': '󰂯󱟃'
     '&swap': '⌘↹'
+    '&studio_unlock': ''
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
