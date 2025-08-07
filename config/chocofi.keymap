@@ -28,21 +28,25 @@
     ret_combo {
       bindings = <&kp ENTER>;
       key-positions = <28 27>;
+      layers = <0>;
     };
 
     backspace {
       bindings = <&kp BACKSPACE>;
       key-positions = <7 8>;
+      layers = <0>;
     };
 
     esc_combo {
       bindings = <&kp ESCAPE>;
       key-positions = <1 2>;
+      layers = <0>;
     };
 
     tab_combo {
       bindings = <&kp TAB>;
       key-positions = <22 21>;
+      layers = <0>;
     };
   };
 
