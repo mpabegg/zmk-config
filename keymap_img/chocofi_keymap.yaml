@@ -70,9 +70,13 @@ layers:
 combos:
 - p: [28, 27]
   k: ⏎
+  l: [QWERTY]
 - p: [7, 8]
   k: 󰭜
+  l: [QWERTY]
 - p: [1, 2]
   k: ⎋
+  l: [QWERTY]
 - p: [22, 21]
   k: ↹
+  l: [QWERTY]
