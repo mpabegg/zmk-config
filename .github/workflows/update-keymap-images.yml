@@ -32,7 +32,7 @@ jobs:
         run: |
           cd keymap_img
           chmod +x update_keymap_img.sh
-          ./update_keymap_img.sh chocofi
+          ./update_keymap_img.sh --ci chocofi
 
       - name: Check for changes
         id: check_changes
