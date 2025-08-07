@@ -18,9 +18,8 @@ while [ $# -gt 0 ]; do
 done
 
 if [ -z $kb ]; then
-  echo "Need to choose a keyboard"
-  echo "Usage: $0 [--ci] <keyboard>"
-  exit 1
+  echo "No keyboard specified, using chocofi as default"
+  kb="chocofi"
 fi
 
 if [ -f "${kb}_keymap.yaml" ]; then

@@ -22,13 +22,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
-      - name: Install keymap tool
+      - name: Install local keymap tool
         run: |
           pip install --upgrade pip
-          # Try the latest version first, fallback to your version if needed
-          pip install keymap-drawer || pip install keymap-drawer==0.17.0
+          pip install pyyaml pydantic tree-sitter
+          cd .github/actions/keymap-drawer
+          pip install -e .
 
       - name: Generate keymap images
         run: |
