@@ -25,9 +25,24 @@
   combos {
     compatible = "zmk,combos";
 
-    combo_esc {
-      bindings = <&kp ESC>;
-      key-positions = <0 1>;
+    ret_combo {
+      bindings = <&kp ENTER>;
+      key-positions = <28 27>;
+    };
+
+    backspace {
+      bindings = <&kp BACKSPACE>;
+      key-positions = <7 8>;
+    };
+
+    esc_combo {
+      bindings = <&kp ESCAPE>;
+      key-positions = <1 2>;
+    };
+
+    tab_combo {
+      bindings = <&kp TAB>;
+      key-positions = <22 21>;
     };
   };
 
