@@ -1,0 +1,53 @@
+name: Update Keymap Images
+
+on:
+  push:
+    paths:
+      - 'config/*.keymap'
+      - 'keymap_img/my_config.yaml'
+      - 'keymap_img/update_keymap_img.sh'
+  workflow_dispatch:
+
+jobs:
+  update-keymap-images:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install keymap tool
+        run: |
+          pip install keymap-drawer
+
+      - name: Generate keymap images
+        run: |
+          cd keymap_img
+          chmod +x update_keymap_img.sh
+          ./update_keymap_img.sh chocofi
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add keymap_img/*.svg keymap_img/*.yaml
+          git commit -m "Auto-update keymap images [skip ci]"
+          git push
