@@ -26,13 +26,29 @@ jobs:
 
       - name: Install keymap tool
         run: |
-          pip install keymap-drawer
+          pip install --upgrade pip
+          # Try the latest version first, fallback to your version if needed
+          pip install keymap-drawer || pip install keymap-drawer==0.17.0
 
       - name: Generate keymap images
         run: |
           cd keymap_img
           chmod +x update_keymap_img.sh
-          ./update_keymap_img.sh --ci chocofi
+          echo "Current directory: $(pwd)"
+          echo "Keymap tool version: $(keymap --version)"
+          echo "Keymap file exists: $(test -f "../config/chocofi.keymap" && echo "Yes" || echo "No")"
+          echo "Config file exists: $(test -f "my_config.yaml" && echo "Yes" || echo "No")"
+          
+          # Try to generate the keymap images
+          if ./update_keymap_img.sh --ci chocofi; then
+            echo "Keymap generation successful"
+          else
+            echo "Keymap generation failed, trying alternative approach..."
+            # Fallback: try direct keymap commands
+            keymap -c my_config.yaml parse -c 10 -z "../config/chocofi.keymap" > "chocofi_keymap.yaml" || exit 1
+            keymap -c my_config.yaml draw -k "chocofi" "chocofi_keymap.yaml" > "chocofi_keymap.svg" || exit 1
+            echo "Fallback keymap generation successful"
+          fi
 
       - name: Check for changes
         id: check_changes
