@@ -125,10 +125,10 @@
 
     NumberAgain {
       bindings = <
-        &kp ESC       &kp TILDE      &kp LEFT_BRACKET  &kp LPAR         &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp N7         &kp N8             &kp N9      &none
-        &hml LALT N1  &hml LCTRL N2  &hml LGUI N3      &hml LSHFT RPAR  &kp N5            &kp N6           &hmr RSHFT N4  &hmr RGUI N5       &hmr RCTRL N6  &hmr RALT N0
-        &kp PIPE      &kp PLUS       &kp UNDERSCORE    &kp DQT          &trans            &kp N0           &kp N1         &kp N2             &kp N3      &kp BACKSLASH
-                                     &none             &lt 3 BACKSPACE  &trans            &trans           &trans         &none
+        &kp ESC  &kp GRAVE                &kp LEFT_BRACKET  &kp LPAR         &kp LEFT_BRACE    &none   &kp N7         &kp N8        &kp N9         &none
+        &none    &hml LCTRL SINGLE_QUOTE  &hml LGUI RBKT    &hml LSHFT RPAR  &kp RBRC          &none   &hmr RSHFT N4  &hmr RGUI N5  &hmr RCTRL N6  &none
+        &none    &kp BACKSLASH            &kp MINUS         &kp EQUAL        &none             &kp N0  &kp N1         &kp N2        &kp N3         &none
+                                          &none             &lt 3 BACKSPACE  &trans            &trans  &trans         &none
       >;
     };
   };
