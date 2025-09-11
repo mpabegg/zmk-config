@@ -30,8 +30,8 @@ if [ -f "${kb}_keymap.svg" ]; then
   rm "${kb}_keymap.svg"
 fi
 
-keymap -c my_config.yaml parse -c 10 -z "../config/${kb}.keymap" > "${kb}_keymap.yaml"
-keymap -c my_config.yaml draw -k "$kb" "${kb}_keymap.yaml" > "${kb}_keymap.svg"
+keymap -c my_config.yaml parse -z "../config/${kb}.keymap" -o "${kb}_keymap.yaml"
+keymap -c my_config.yaml draw "${kb}_keymap.yaml" > "${kb}_keymap.svg"
 
 if [ "$ci_mode" = false ]; then
   open "${kb}_keymap.svg"
