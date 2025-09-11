@@ -4,10 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: mpabegg
       url-base: https://github.com/mpabegg
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: mpabegg
       revision: swapper
       import: app/west.yml
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
