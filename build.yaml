@@ -19,10 +19,16 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
     shield: chocofi_right
-  - board: seeeduino_xiao_ble
-    shield: forager_left rgbled_adapter
+
+  - board: nice_nano_v2
+    shield: forager_central_dongle dongle_display
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
-    shield: forager_right rgbled_adapter
+    shield: forager_central_left rgbled_adapter
+    snippet: studio-rpc-usb-uart
+  - board: seeeduino_xiao_ble
+    shield: forager_periphreal_left rgbled_adapter
+  - board: seeeduino_xiao_ble
+    shield: forager_periphreal_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
