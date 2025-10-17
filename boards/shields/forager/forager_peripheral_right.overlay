@@ -20,3 +20,7 @@
     , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     ;
  };
+
+&xiao_serial {
+    status = "disabled";
+};
