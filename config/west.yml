@@ -1,23 +1,20 @@
 manifest:
+  defaults:
+    revision: v0.3 # ZMK release; modules are pinned to their matching release
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mpabegg
-      url-base: https://github.com/mpabegg
+    - name: urob
+      url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
-      remote: mpabegg
-      revision: swapper
+      remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-tri-state
+      remote: urob
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: main
   self:
     path: config
