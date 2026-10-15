@@ -18,8 +18,8 @@ while [ $# -gt 0 ]; do
 done
 
 if [ -z $kb ]; then
-  echo "No keyboard specified, using chocofi as default"
-  kb="chocofi"
+  echo "No keyboard specified, using forager as default"
+  kb="forager"
 fi
 
 if [ -f "${kb}_keymap.yaml" ]; then
@@ -31,8 +31,8 @@ if [ -f "${kb}_keymap.svg" ]; then
 fi
 
 keymap -c my_config.yaml parse -z "../config/${kb}.keymap" -o "${kb}_keymap.yaml"
-keymap -c my_config.yaml draw "${kb}_keymap.yaml" > "${kb}_keymap.svg"
+keymap -c my_config.yaml draw -j "../config/${kb}.json" "${kb}_keymap.yaml" > "${kb}_keymap.svg"
 
 if [ "$ci_mode" = false ]; then
-  open "${kb}_keymap.svg"
+  if command -v open >/dev/null; then open "${kb}_keymap.svg"; else xdg-open "${kb}_keymap.svg"; fi
 fi

@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+file_format: "1"
+id: silakka54_wireless
+name: Silakka54 Wireless
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+  - studio
+siblings:
+  - silakka54_wireless_left
+  - silakka54_wireless_right
