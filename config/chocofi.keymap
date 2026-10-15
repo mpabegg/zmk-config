@@ -101,7 +101,7 @@
       display-name = "Base";
       bindings = <
         &kp Q        &kp W         &kp E        &kp R           &kp T          &kp Y             &kp U         &kp I        &kp O         &kp P
-        &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT F    &kp G          &kp H             &hmr RSHFT J  &hmr RGUI K  &hmr RCTRL L  &hmr RALT SQT
+        &hml LALT A  &hml LCTRL S  &hml LGUI D  &hml LSHFT F    &hml RALT G    &kp H             &hmr RSHFT J  &hmr RGUI K  &hmr RCTRL L  &hmr RALT SQT
         &kp Z        &kp X         &kp C        &kp V           &kp B          &kp N             &kp M         &kp COMMA    &kp DOT       &kp FSLH
                                      &none      &lt NAV BSPC    &lt NUM RET    &sshift LSHFT 0   &lt SYM SPACE  &none
       >;
@@ -129,9 +129,10 @@
 
     num_layer {
       display-name = "Num";
+      // Num+G: one-shot AltGr; release Num, then type the target key.
       bindings = <
         &none     &none      &none     &none      &none        &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS
-        &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &none        &kp STAR   &kp N4  &kp N5  &kp N6  &kp PLUS
+        &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &sk RALT     &kp STAR   &kp N4  &kp N5  &kp N6  &kp PLUS
         &none     &none      &none     &none      &none        &kp COMMA  &kp N1  &kp N2  &kp N3  &kp EQUAL
                             &none      &none      &trans       &kp DOT    &kp N0  &none
       >;
