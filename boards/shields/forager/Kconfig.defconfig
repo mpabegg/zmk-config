@@ -14,6 +14,10 @@ config ZMK_STUDIO
 
 endif
 
+# Keep display defaults local: otherwise an unrelated display shield inherits
+# SSD1306 and overrides its own LVGL defaults even without a Forager selected.
+if SHIELD_FORAGER_CENTRAL_DONGLE || SHIELD_FORAGER_CENTRAL_LEFT || SHIELD_FORAGER_PERIPHERAL_LEFT || SHIELD_FORAGER_PERIPHERAL_RIGHT
+
 if ZMK_DISPLAY
 
 config I2C
@@ -44,6 +48,8 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif
+
+endif # Forager shields
 
 if SHIELD_FORAGER_CENTRAL_DONGLE || SHIELD_FORAGER_CENTRAL_LEFT || SHIELD_FORAGER_PERIPHERAL_LEFT || SHIELD_FORAGER_PERIPHERAL_RIGHT
 

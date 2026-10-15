@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MIT
+
+config SHIELD_SILAKKA54_WIRELESS_LEFT
+    def_bool $(shields_list_contains,silakka54_wireless_left)
+
+config SHIELD_SILAKKA54_WIRELESS_RIGHT
+    def_bool $(shields_list_contains,silakka54_wireless_right)
