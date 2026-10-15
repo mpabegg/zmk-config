@@ -21,6 +21,11 @@ Modules:
 GitHub Actions uses [`build.yaml`](build.yaml). Download the `firmware` artifact.
 Silakka54 files: `silakka54_left.uf2` and `silakka54_right.uf2`.
 
+## Original keymaps
+
+Pre-merge Chocofi and Forager keymaps are in [`backups/keymaps/pre-new-layers/`](backups/keymaps/pre-new-layers/).
+To restore either, copy its `.keymap` into `config/`, rebuild, and flash.
+
 ## Credits
 
 Silakka54 Wireless uses adapted [ZMK/Lily58 shield code](https://github.com/zmkfirmware/zmk/tree/v0.3.0/app/boards/shields/lily58)
