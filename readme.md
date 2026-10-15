@@ -8,7 +8,13 @@ Modules:
 - [zmk-tri-state](https://github.com/urob/zmk-tri-state): Cmd+Tab swapper.
 - [zmk-rgbled-widget](https://github.com/caksoylar/zmk-rgbled-widget): Forager status LED.
 
+## Forager keymap
+
 ![](keymap_img/forager_keymap.svg)
+
+## Silakka54 Wireless keymap
+
+![Silakka54 Wireless Base, Nav, Sym, Num, and Sys layers](keymap_img/silakka54_wireless_keymap.svg)
 
 ## Builds
 
